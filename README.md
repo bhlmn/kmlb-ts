@@ -13,7 +13,14 @@ Numerical weather prediction (NWP) systems are, in short, amazing. Their use has
 [Sá et al. (2011)](https://www.researchgate.net/publication/303773171_Lightning_Forecast_Using_Data_Mining_Techniques_On_Hourly_Evolution_Of_The_Convective_Available_Potential_Energy) used k-Nearest Neighbors and Decision Trees to classify the lightning activity at Belem Airport in Brazil. Hourly convective available potential energy (CAPE; a metric of the buoyancy of a rising air parcel) values were used to classify three scenarios: 1) no, 2) moderate, and 3) heavy lightning activity. The methods accurately predicted the lightning class 70% of the time.
 
 ## Data
-Model data consists of GFS/AVN MOS forecasts provided by the [Iowa State University Mesonet](https://mesonet.agron.iastate.edu/mos/fe.phtml). 
+Model data consists of GFS/AVN MOS forecasts provided by the [Iowa State University Mesonet](https://mesonet.agron.iastate.edu/mos/fe.phtml). Observations are provided by METARs at [Orlando Melbourne International Airport (KMLB)](https://en.wikipedia.org/wiki/Orlando_Melbourne_International_Airport) accessed through the [Iowa State University Mesonet](https://mesonet.agron.iastate.edu/mos/fe.phtml) R package [riem](https://cran.r-project.org/web/packages/riem/index.html). These METAR reports are used to classify summertime (May through September) thunderstorm initiation into four categories:
+* 0 - no thunderstorms on this given day
+* 1 - thunderstorms observed before noon
+* 2 - thunderstorms began in the afternoon (noon to 5pm)
+* 3 - thunderstorms began in the evening (after 5 pm)
+
+## Methods
+Coming soon.
 
 ## Acknowledgements
 I want to thank the [Iowa State University Mesonet](https://mesonet.agron.iastate.edu/) for providing such a wonderful data archive and rich APIs to grab weather data with ease!
@@ -21,4 +28,4 @@ I want to thank the [Iowa State University Mesonet](https://mesonet.agron.iastat
 ## References
 Glahn, H. R. and D. A. Lowry, 1972: The use of model output statistics (MOS) in objective weather forecasting. *J. Appl Meteor.*, **11**, 1203-1211.
 
-Sá, A. J. S., A. C. Almeida, B. R. P. Rocha, M. A. S. Mota, J. R. S. Souza, and L. M. Dentel, 2011: Lightning Forecast Using Data Mining Techniques on Hourly Evolution of the Convective Available Potential Energy. *Brazilian Congress on Computational Intelligence, Fortaleza, November 2011*. 8-11.
+Sá, A. J. S., A. C. Almeida, B. R. P. Rocha, M. A. S. Mota, J. R. S. Souza, and L. M. Dentel, 2011: Lightning Forecast Using Data Mining Techniques on Hourly Evolution of the Convective Available Potential Energy. *Brazilian Congress on Computational Intelligence, Fortaleza, November 2011*, 8-11.
