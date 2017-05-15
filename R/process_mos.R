@@ -11,7 +11,7 @@ library(lubridate) # improved date handling
 
 
 # data --------------------------------------------------------------------
-df.mos <- read.csv('data/kmlb_mos_2000_2016.csv', row.names = FALSE,
+df.mos <- read.csv('data/kmlb_mos_2001_2016.csv', row.names = NULL, 
                    stringsAsFactors = FALSE)
 
 # remove the row.names column
@@ -22,6 +22,10 @@ df.mos <- df.mos[,!names(df.mos) %in% c('rmv', 'station', 'snw', 'cig', 'vis',
 # change runtime and ftime to POSIXct objects
 df.mos$runtime <- as.POSIXct(gsub('\\+\\d\\d', '', df.mos$runtime), tz = 'UTC')
 df.mos$ftime <- as.POSIXct(gsub('\\+\\d\\d', '', df.mos$ftime), tz = 'UTC')
+
+# Data processing and feature engineering
+
+
 
 # save this edited df.mos dataset
 save(df.mos, file = 'data/kmlb_mos_processed.RData')

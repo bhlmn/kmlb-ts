@@ -20,7 +20,13 @@ Model data consist of GFS/AVN MOS forecasts provided by the [Iowa State Universi
 * 3 - thunderstorms began in the evening (after 5 pm)
 
 ## Methods
-Coming soon.
+This project will use the following classification methods:
+* Logistic regression
+* k-Nearest Neighbors
+* Random Forests
+* Support Vector Machines
+
+More information coming soon ...
 
 ## Acknowledgements
 I want to thank the [Iowa State University Mesonet](https://mesonet.agron.iastate.edu/) for providing such a wonderful data archive and rich APIs to grab weather data with ease!
