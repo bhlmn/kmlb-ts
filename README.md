@@ -14,10 +14,12 @@ Numerical weather prediction (NWP) systems are, in short, amazing. Their use has
 
 ## Data
 Model data consist of GFS/AVN MOS forecasts provided by the [Iowa State University Mesonet](https://mesonet.agron.iastate.edu/mos/fe.phtml). Observations are provided by METARs at [Orlando Melbourne International Airport (KMLB)](https://en.wikipedia.org/wiki/Orlando_Melbourne_International_Airport) accessed through the R package `riem` [(Salmon 2016)](https://cran.r-project.org/web/packages/riem/index.html). These METAR reports are used to classify summertime (May through September) thunderstorm initiation into four categories:
+
 * 0 - no thunderstorms on this given day
 * 1 - thunderstorms observed before noon
-* 2 - thunderstorms began in the afternoon (noon to 5pm)
-* 3 - thunderstorms began in the evening (after 5 pm)
+* 2 - thunderstorms began in the afternoon (noon to 6pm)
+* 3 - thunderstorms began in the evening (6pm to midnight)
+* 4 - thunderstorms began after midnight (before 6am next day)
 
 ## Methods
 This project will use the following classification methods:
