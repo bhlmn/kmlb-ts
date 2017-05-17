@@ -13,14 +13,7 @@ Numerical weather prediction (NWP) systems are, in short, amazing. Their use has
 [Sá et al. (2011)](https://www.researchgate.net/publication/303773171_Lightning_Forecast_Using_Data_Mining_Techniques_On_Hourly_Evolution_Of_The_Convective_Available_Potential_Energy) used k-Nearest Neighbors and Decision Trees to classify the lightning activity at Belem Airport in Brazil. Hourly convective available potential energy (CAPE; a metric of the buoyancy of a rising air parcel) values were used to classify three scenarios: 1) no, 2) moderate, and 3) heavy lightning activity. The methods accurately predicted the lightning class 70% of the time.
 
 ## Data
-Model data consist of GFS/AVN MOS forecasts provided by the [Iowa State University Mesonet](https://mesonet.agron.iastate.edu/mos/fe.phtml). Observations are provided by METARs at [Orlando Melbourne International Airport (KMLB)](https://en.wikipedia.org/wiki/Orlando_Melbourne_International_Airport) accessed through the R package `riem` [(Salmon 2016)](https://cran.r-project.org/web/packages/riem/index.html). 
-
-For now I am using these data to forecast one of two possibilities suring the Florida Summer (June through September):
-
-* 0 - no thunderstorms near KMLB on a given day
-* 1 - thunderstorms!
-
-But in the future I want to predict thunderstorm initiation into one of five categories:
+Model data consist of GFS/AVN MOS forecasts provided by the [Iowa State University Mesonet](https://mesonet.agron.iastate.edu/mos/fe.phtml). Observations are provided by METARs at [Orlando Melbourne International Airport (KMLB)](https://en.wikipedia.org/wiki/Orlando_Melbourne_International_Airport) accessed through the R package `riem` [(Salmon 2016)](https://cran.r-project.org/web/packages/riem/index.html). For now I am using these data to forecast whether or not (1 - yes, 0 - no) there will be thunderstorms near KMLB during the Florida Summer (June through September). But in the future I want to predict thunderstorm initiation into one of five categories:
 
 * 0 - no thunderstorms on this given day
 * 1 - thunderstorms observed before noon
