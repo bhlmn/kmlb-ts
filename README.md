@@ -1,5 +1,5 @@
 # kmlb-ts
-Using ML classification methods to predict summertime thunderstorm initiaion in Melbourne, FL.
+Using ML classification methods to predict summertime thunderstorm initiation in Melbourne, FL.
 
 ## Background
 ### Numerical Weather Prediction
